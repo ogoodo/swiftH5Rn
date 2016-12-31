@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7419D7EC1E11EFBE002FB67E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */; };
+		7419D7EE1E11EFBE002FB67E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419D7ED1E11EFBE002FB67E /* ViewController.swift */; };
+		7419D7F11E11EFBE002FB67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7419D7EF1E11EFBE002FB67E /* Main.storyboard */; };
+		7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7419D7F21E11EFBE002FB67E /* Assets.xcassets */; };
+		7419D7F61E11EFBE002FB67E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7419D7F41E11EFBE002FB67E /* LaunchScreen.storyboard */; };
+		7419D8041E11F16F002FB67E /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7419D8031E11F16F002FB67E /* config.xml */; };
+		7419D8061E11F1A0002FB67E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7419D8051E11F1A0002FB67E /* www */; };
+		7419D8091E11F27C002FB67E /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7419D8021E11F132002FB67E /* libCordova.a */; };
+		746723731E120C6D00CC6867 /* H5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746723721E120C6D00CC6867 /* H5ViewController.swift */; };
+		74923C721E175D89001A51DF /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C551E175C1A001A51DF /* libRCTNetwork.a */; };
+		74923C741E175D89001A51DF /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C5E1E175C8F001A51DF /* libRCTText.a */; };
+		74923C761E175D89001A51DF /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C671E175CAA001A51DF /* libRCTWebSocket.a */; };
+		74923C781E175D89001A51DF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C4C1E175B2D001A51DF /* libReact.a */; };
+		74923C7A1E1778D7001A51DF /* RNViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74923C791E1778D7001A51DF /* RNViewController.swift */; };
+		74923C7D1E178103001A51DF /* ReactTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74923C7C1E178103001A51DF /* ReactTestView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7419D8011E11F132002FB67E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 68A32D7114102E1C006B237C;
+			remoteInfo = CordovaLib;
+		};
+		7419D8071E11F26A002FB67E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		74923C4B1E175B2D001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C461E175B2D001A51DF /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		74923C4D1E175B2D001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C461E175B2D001A51DF /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28131D9B038B00D4039D;
+			remoteInfo = "React-tvOS";
+		};
+		74923C541E175C1A001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B511DB1A9E6C8500147676;
+			remoteInfo = RCTNetwork;
+		};
+		74923C561E175C1A001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28541D9B044C00D4039D;
+			remoteInfo = "RCTNetwork-tvOS";
+		};
+		74923C5D1E175C8F001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C581E175C8F001A51DF /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
+			remoteInfo = RCTText;
+		};
+		74923C5F1E175C8F001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C581E175C8F001A51DF /* RCTText.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A287B1D9B048500D4039D;
+			remoteInfo = "RCTText-tvOS";
+		};
+		74923C661E175CAA001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C611E175CAA001A51DF /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3C86DF461ADF2C930047B81A;
+			remoteInfo = RCTWebSocket;
+		};
+		74923C681E175CAA001A51DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74923C611E175CAA001A51DF /* RCTWebSocket.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2D2A28881D9B049200D4039D;
+			remoteInfo = "RCTWebSocket-tvOS";
+		};
+		74B11BAA1E178F1100BCCAFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74B11BA61E178F1100BCCAFA /* RCTActionSheet.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RCTActionSheet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7419D7E81E11EFBE002FB67E /* MySwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7419D7ED1E11EFBE002FB67E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7419D7F01E11EFBE002FB67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7419D7F21E11EFBE002FB67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7419D7F51E11EFBE002FB67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7419D7F71E11EFBE002FB67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		7419D8031E11F16F002FB67E /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = MySwiftProject/config.xml; sourceTree = "<group>"; };
+		7419D8051E11F1A0002FB67E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		7419D80B1E11F36F002FB67E /* MySwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		746723721E120C6D00CC6867 /* H5ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = H5ViewController.swift; sourceTree = "<group>"; };
+		74923C461E175B2D001A51DF /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
+		74923C581E175C8F001A51DF /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		74923C611E175CAA001A51DF /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
+		74923C791E1778D7001A51DF /* RNViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNViewController.swift; sourceTree = "<group>"; };
+		74923C7B1E178103001A51DF /* ReactTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReactTestView.h; sourceTree = "<group>"; };
+		74923C7C1E178103001A51DF /* ReactTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReactTestView.m; sourceTree = "<group>"; };
+		74B11BA61E178F1100BCCAFA /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7419D7E51E11EFBE002FB67E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74923C721E175D89001A51DF /* libRCTNetwork.a in Frameworks */,
+				74923C741E175D89001A51DF /* libRCTText.a in Frameworks */,
+				74923C761E175D89001A51DF /* libRCTWebSocket.a in Frameworks */,
+				74923C781E175D89001A51DF /* libReact.a in Frameworks */,
+				7419D8091E11F27C002FB67E /* libCordova.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7419D7DF1E11EFBE002FB67E = {
+			isa = PBXGroup;
+			children = (
+				7419D8051E11F1A0002FB67E /* www */,
+				7419D8031E11F16F002FB67E /* config.xml */,
+				7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */,
+				7419D7EA1E11EFBE002FB67E /* MySwiftProject */,
+				7419D7E91E11EFBE002FB67E /* Products */,
+				7419D80B1E11F36F002FB67E /* MySwiftProject-Bridging-Header.h */,
+				74923C451E175B2C001A51DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7419D7E91E11EFBE002FB67E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7419D7E81E11EFBE002FB67E /* MySwiftProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7419D7EA1E11EFBE002FB67E /* MySwiftProject */ = {
+			isa = PBXGroup;
+			children = (
+				74923C7B1E178103001A51DF /* ReactTestView.h */,
+				74923C7C1E178103001A51DF /* ReactTestView.m */,
+				7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */,
+				7419D7ED1E11EFBE002FB67E /* ViewController.swift */,
+				7419D7EF1E11EFBE002FB67E /* Main.storyboard */,
+				7419D7F21E11EFBE002FB67E /* Assets.xcassets */,
+				7419D7F41E11EFBE002FB67E /* LaunchScreen.storyboard */,
+				7419D7F71E11EFBE002FB67E /* Info.plist */,
+				746723721E120C6D00CC6867 /* H5ViewController.swift */,
+				74923C791E1778D7001A51DF /* RNViewController.swift */,
+			);
+			path = MySwiftProject;
+			sourceTree = "<group>";
+		};
+		7419D7FE1E11F131002FB67E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7419D8021E11F132002FB67E /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74923C451E175B2C001A51DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74B11BA61E178F1100BCCAFA /* RCTActionSheet.xcodeproj */,
+				74923C611E175CAA001A51DF /* RCTWebSocket.xcodeproj */,
+				74923C581E175C8F001A51DF /* RCTText.xcodeproj */,
+				74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */,
+				74923C461E175B2D001A51DF /* React.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74923C471E175B2D001A51DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74923C4C1E175B2D001A51DF /* libReact.a */,
+				74923C4E1E175B2D001A51DF /* libReact-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74923C501E175C19001A51DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74923C551E175C1A001A51DF /* libRCTNetwork.a */,
+				74923C571E175C1A001A51DF /* libRCTNetwork-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74923C591E175C8F001A51DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74923C5E1E175C8F001A51DF /* libRCTText.a */,
+				74923C601E175C8F001A51DF /* libRCTText-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74923C621E175CAA001A51DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74923C671E175CAA001A51DF /* libRCTWebSocket.a */,
+				74923C691E175CAA001A51DF /* libRCTWebSocket-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74B11BA71E178F1100BCCAFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74B11BAB1E178F1100BCCAFA /* libRCTActionSheet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7419D7E71E11EFBE002FB67E /* MySwiftProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7419D7FA1E11EFBE002FB67E /* Build configuration list for PBXNativeTarget "MySwiftProject" */;
+			buildPhases = (
+				7419D7E41E11EFBE002FB67E /* Sources */,
+				7419D7E51E11EFBE002FB67E /* Frameworks */,
+				7419D7E61E11EFBE002FB67E /* Resources */,
+				7419D80A1E11F294002FB67E /* Copy www directory */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7419D8081E11F26A002FB67E /* PBXTargetDependency */,
+			);
+			name = MySwiftProject;
+			productName = MySwiftProject;
+			productReference = 7419D7E81E11EFBE002FB67E /* MySwiftProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7419D7E01E11EFBE002FB67E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = chen;
+				TargetAttributes = {
+					7419D7E71E11EFBE002FB67E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7419D7E31E11EFBE002FB67E /* Build configuration list for PBXProject "MySwiftProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7419D7DF1E11EFBE002FB67E;
+			productRefGroup = 7419D7E91E11EFBE002FB67E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7419D7FE1E11F131002FB67E /* Products */;
+					ProjectRef = 7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */;
+				},
+				{
+					ProductGroup = 74B11BA71E178F1100BCCAFA /* Products */;
+					ProjectRef = 74B11BA61E178F1100BCCAFA /* RCTActionSheet.xcodeproj */;
+				},
+				{
+					ProductGroup = 74923C501E175C19001A51DF /* Products */;
+					ProjectRef = 74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */;
+				},
+				{
+					ProductGroup = 74923C591E175C8F001A51DF /* Products */;
+					ProjectRef = 74923C581E175C8F001A51DF /* RCTText.xcodeproj */;
+				},
+				{
+					ProductGroup = 74923C621E175CAA001A51DF /* Products */;
+					ProjectRef = 74923C611E175CAA001A51DF /* RCTWebSocket.xcodeproj */;
+				},
+				{
+					ProductGroup = 74923C471E175B2D001A51DF /* Products */;
+					ProjectRef = 74923C461E175B2D001A51DF /* React.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				7419D7E71E11EFBE002FB67E /* MySwiftProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7419D8021E11F132002FB67E /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 7419D8011E11F132002FB67E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C4C1E175B2D001A51DF /* libReact.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReact.a;
+			remoteRef = 74923C4B1E175B2D001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C4E1E175B2D001A51DF /* libReact-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReact-tvOS.a";
+			remoteRef = 74923C4D1E175B2D001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C551E175C1A001A51DF /* libRCTNetwork.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTNetwork.a;
+			remoteRef = 74923C541E175C1A001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C571E175C1A001A51DF /* libRCTNetwork-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTNetwork-tvOS.a";
+			remoteRef = 74923C561E175C1A001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C5E1E175C8F001A51DF /* libRCTText.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTText.a;
+			remoteRef = 74923C5D1E175C8F001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C601E175C8F001A51DF /* libRCTText-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTText-tvOS.a";
+			remoteRef = 74923C5F1E175C8F001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C671E175CAA001A51DF /* libRCTWebSocket.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTWebSocket.a;
+			remoteRef = 74923C661E175CAA001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74923C691E175CAA001A51DF /* libRCTWebSocket-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRCTWebSocket-tvOS.a";
+			remoteRef = 74923C681E175CAA001A51DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		74B11BAB1E178F1100BCCAFA /* libRCTActionSheet.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTActionSheet.a;
+			remoteRef = 74B11BAA1E178F1100BCCAFA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7419D7E61E11EFBE002FB67E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7419D7F61E11EFBE002FB67E /* LaunchScreen.storyboard in Resources */,
+				7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */,
+				7419D7F11E11EFBE002FB67E /* Main.storyboard in Resources */,
+				7419D8061E11F1A0002FB67E /* www in Resources */,
+				7419D8041E11F16F002FB67E /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7419D80A1E11F294002FB67E /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "NODEJS_PATH=/usr/local/bin; NVM_NODE_PATH=~/.nvm/versions/node/`nvm version 2>/dev/null`/bin; N_NODE_PATH=`find /usr/local/n/versions/node/* -maxdepth 0 -type d 2>/dev/null | tail -1`/bin; XCODE_NODE_PATH=`xcode-select --print-path`/usr/share/xcs/Node/bin; PATH=$NODEJS_PATH:$NVM_NODE_PATH:$N_NODE_PATH:$XCODE_NODE_PATH:$PATH && node cordova/lib/copy-www-build-step.js";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7419D7E41E11EFBE002FB67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74923C7D1E178103001A51DF /* ReactTestView.m in Sources */,
+				74923C7A1E1778D7001A51DF /* RNViewController.swift in Sources */,
+				7419D7EE1E11EFBE002FB67E /* ViewController.swift in Sources */,
+				746723731E120C6D00CC6867 /* H5ViewController.swift in Sources */,
+				7419D7EC1E11EFBE002FB67E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7419D8081E11F26A002FB67E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 7419D8071E11F26A002FB67E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7419D7EF1E11EFBE002FB67E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7419D7F01E11EFBE002FB67E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7419D7F41E11EFBE002FB67E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7419D7F51E11EFBE002FB67E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7419D7F81E11EFBE002FB67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7419D7F91E11EFBE002FB67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7419D7FB1E11EFBE002FB67E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = MySwiftProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogoodo.MySwiftProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySwiftProject-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7419D7FC1E11EFBE002FB67E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = MySwiftProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogoodo.MySwiftProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MySwiftProject-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7419D7E31E11EFBE002FB67E /* Build configuration list for PBXProject "MySwiftProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7419D7F81E11EFBE002FB67E /* Debug */,
+				7419D7F91E11EFBE002FB67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7419D7FA1E11EFBE002FB67E /* Build configuration list for PBXNativeTarget "MySwiftProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7419D7FB1E11EFBE002FB67E /* Debug */,
+				7419D7FC1E11EFBE002FB67E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7419D7E01E11EFBE002FB67E /* Project object */;
+}
