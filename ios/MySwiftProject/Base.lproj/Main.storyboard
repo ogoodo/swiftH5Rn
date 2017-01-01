@@ -109,12 +109,25 @@
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="TestView" id="Z0b-kB-w73" customClass="ReactTestView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSH-y7-XZq">
+                                <rect key="frame" x="59" y="65" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="YOo-G6-lOo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVN-7E-WHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="-653"/>
+            <point key="canvasLocation" x="557.60000000000002" y="-653.52323838080963"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YOo-G6-lOo"/>
+    </inferredMetricsTieBreakers>
 </document>
