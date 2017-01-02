@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wNY-MW-5mt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="2RU-xn-yOx">
+            <objects>
+                <navigationController id="wNY-MW-5mt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAH-lG-nrd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Lxf-FT-gld"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQl-nJ-SHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1214" y="-188"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -22,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lqb-fR-4tY">
-                                <rect key="frame" x="164" y="77" width="46" height="54"/>
+                                <rect key="frame" x="43" y="108" width="46" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -30,14 +46,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZI-EL-Qk9">
-                                <rect key="frame" x="16" y="130" width="343" height="21"/>
+                                <rect key="frame" x="16" y="108" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOj-at-WAX">
-                                <rect key="frame" x="232" y="169" width="57" height="30"/>
+                                <rect key="frame" x="197" y="143" width="57" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="打开H5"/>
                                 <connections>
@@ -45,16 +61,54 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZe-UW-S8o">
-                                <rect key="frame" x="240" y="207" width="52" height="30"/>
+                                <rect key="frame" x="197" y="181" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="打开RN"/>
                                 <connections>
                                     <segue destination="orc-sY-w6Y" kind="show" id="8R9-t2-9fk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-wF-oxj">
+                                <rect key="frame" x="54" y="246" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open sb RnView"/>
+                                <connections>
+                                    <action selector="openSBMyRnView:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8G-vJ-ur5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOp-yC-oak">
+                                <rect key="frame" x="54" y="322" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open xib Two view"/>
+                                <connections>
+                                    <action selector="openXibTwoView:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8l-Ai-l7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJd-JI-YyB">
+                                <rect key="frame" x="54" y="284" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open sb H5View"/>
+                                <connections>
+                                    <action selector="openSBMyH5View:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pkf-ey-Dqg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2x-Un-Rhb">
+                                <rect key="frame" x="54" y="398" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqj-Wg-K4k">
+                                <rect key="frame" x="55" y="360" width="125" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="openOtherSbView"/>
+                                <connections>
+                                    <action selector="openOtherSbView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bC-YR-dlR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Qet-9W-ORQ"/>
                     <connections>
                         <outlet property="myLabel" destination="CZI-EL-Qk9" id="9uq-qC-ogs"/>
                     </connections>
@@ -66,12 +120,12 @@
         <!--View Controller-->
         <scene sceneID="TR6-dM-Mx0">
             <objects>
-                <viewController id="YHM-J5-4yA" customClass="H5ViewController" customModule="MySwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myH5View" id="YHM-J5-4yA" customClass="H5ViewController" customModule="MySwiftProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GTJ-vd-17z"/>
                         <viewControllerLayoutGuide type="bottom" id="7H7-Tj-AtO"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="UrC-OS-4R8">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="myView" id="UrC-OS-4R8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -101,7 +155,7 @@
         <!--View Controller-->
         <scene sceneID="o31-Nh-Ra2">
             <objects>
-                <viewController id="orc-sY-w6Y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myRnView" id="orc-sY-w6Y" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MQE-Ug-CfS"/>
                         <viewControllerLayoutGuide type="bottom" id="jmS-K6-6Sv"/>
@@ -128,6 +182,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YOo-G6-lOo"/>
+        <segue reference="iXg-zB-G6b"/>
     </inferredMetricsTieBreakers>
 </document>
