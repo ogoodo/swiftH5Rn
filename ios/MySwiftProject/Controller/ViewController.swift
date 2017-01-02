@@ -41,10 +41,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func openOtherSbView(_ sender: UIButton) {
-        let sb = UIStoryboard(name: "Second", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "First")as? UIViewController
-        self.navigationController?.pushViewController(vc!, animated: true)
-
+        let sb = UIStoryboard(storyboard: .Second)
+        let vc: SecondOneViewController = sb.instantiateViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func openSecondTwoSbView(_ sender: UIButton) {
+        let sb = UIStoryboard(storyboard: .Second)
+        let vc: SecondTwoViewController = sb.instantiateViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     override func viewDidLoad() {

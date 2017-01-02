@@ -93,14 +93,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2x-Un-Rhb">
-                                <rect key="frame" x="54" y="398" width="46" height="30"/>
+                                <rect key="frame" x="56" y="398" width="164" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="openSecondSbTwoView"/>
+                                <connections>
+                                    <action selector="openSecondTwoSbView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D5P-fH-6RN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqj-Wg-K4k">
-                                <rect key="frame" x="55" y="360" width="125" height="30"/>
+                                <rect key="frame" x="56" y="360" width="166" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="openOtherSbView"/>
+                                <state key="normal" title="openSecondSbOneView"/>
                                 <connections>
                                     <action selector="openOtherSbView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bC-YR-dlR"/>
                                 </connections>
