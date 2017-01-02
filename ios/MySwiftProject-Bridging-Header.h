@@ -6,5 +6,12 @@
 
 #import "RCTBundleURLProvider.h"
 #import "RCTRootView.h"
+
+#import "RCTBridgeModule.h"
+#import "RCTBridge.h"
+#import "RCTEventDispatcher.h"
+#import "RCTUtils.h"
+#import "RCTConvert.h"
+
 #import "ReactTestView.h"
 

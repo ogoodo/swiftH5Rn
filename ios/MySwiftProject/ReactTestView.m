@@ -19,6 +19,7 @@
 */
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     // NSString *urlString = @"http://192.168.0.203:8081/index.ios.bundle?platform=ios";
     NSString *urlString = @"http://192.168.1.105:8081/index.ios.bundle?platform=ios&dev=true"; // qq
     // NSString *urlString = @"http://10.180.136.2:8081/index.ios.bundle?platform=ios&dev=true"; // comma

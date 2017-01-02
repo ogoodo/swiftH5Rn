@@ -18,40 +18,44 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openSBMyRnView(_ sender: UIButton, forEvent event: UIEvent) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "myRnView") else {
-            print("View controller myRnView not found")
-            return
-        }
+//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "RNViewController") else {
+//            print("View controller myRnView not found")
+//            return
+//        }
+//        navigationController?.pushViewController(vc, animated: true)
+//        return;
+        let sb = UIStoryboard(storyboard: .Main)
+        let vc: RNViewController = sb.instantiateViewController()
         navigationController?.pushViewController(vc, animated: true)
-        return;
     }
-    
+
     @IBAction func openSBMyH5View(_ sender: UIButton, forEvent event: UIEvent) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "myH5View") else {
-            print("View controller myH5View not found")
-            return
-        }
+//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "myH5View") else {
+//            print("View controller myH5View not found")
+//            return
+        //        }
+        let sb = UIStoryboard(storyboard: .Main)
+        let vc: H5ViewController = sb.instantiateViewController()
         navigationController?.pushViewController(vc, animated: true)
-        return;
     }
 
     @IBAction func openXibTwoView(_ sender: UIButton, forEvent event: UIEvent) {
         let vc = TwoViewController(nibName: "TwoViewController", bundle: nil)
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     @IBAction func openOtherSbView(_ sender: UIButton) {
         let sb = UIStoryboard(storyboard: .Second)
         let vc: SecondOneViewController = sb.instantiateViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     @IBAction func openSecondTwoSbView(_ sender: UIButton) {
         let sb = UIStoryboard(storyboard: .Second)
         let vc: SecondTwoViewController = sb.instantiateViewController()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

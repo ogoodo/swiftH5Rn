@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741871191E1A8BF900900436 /* ReactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741871181E1A8BF900900436 /* ReactView.swift */; };
 		7419D7EC1E11EFBE002FB67E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */; };
-		7419D7F11E11EFBE002FB67E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7419D7EF1E11EFBE002FB67E /* Main.storyboard */; };
 		7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7419D7F21E11EFBE002FB67E /* Assets.xcassets */; };
-		7419D7F61E11EFBE002FB67E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7419D7F41E11EFBE002FB67E /* LaunchScreen.storyboard */; };
 		7419D8041E11F16F002FB67E /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7419D8031E11F16F002FB67E /* config.xml */; };
 		7419D8061E11F1A0002FB67E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7419D8051E11F1A0002FB67E /* www */; };
 		7419D8091E11F27C002FB67E /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7419D8021E11F132002FB67E /* libCordova.a */; };
 		7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */; };
+		744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */; };
+		744FE0BF1E1A720100587862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BC1E1A720100587862 /* Main.storyboard */; };
 		74923C721E175D89001A51DF /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C551E175C1A001A51DF /* libRCTNetwork.a */; };
 		74923C741E175D89001A51DF /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C5E1E175C8F001A51DF /* libRCTText.a */; };
 		74923C761E175D89001A51DF /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C671E175CAA001A51DF /* libRCTWebSocket.a */; };
@@ -115,17 +116,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		741871181E1A8BF900900436 /* ReactView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactView.swift; path = View/ReactView.swift; sourceTree = "<group>"; };
 		7419D7E81E11EFBE002FB67E /* MySwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7419D7F01E11EFBE002FB67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7419D7F21E11EFBE002FB67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7419D7F51E11EFBE002FB67E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7419D7F71E11EFBE002FB67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		7419D8031E11F16F002FB67E /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = MySwiftProject/config.xml; sourceTree = "<group>"; };
 		7419D8051E11F1A0002FB67E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		7419D80B1E11F36F002FB67E /* MySwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoViewController.swift; path = Controller/TwoViewController.swift; sourceTree = "<group>"; };
+		744FE0BB1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		744FE0BD1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74923C461E175B2D001A51DF /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		74923C581E175C8F001A51DF /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7418711A1E1A8BFF00900436 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				741871181E1A8BF900900436 /* ReactView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		7419D7DF1E11EFBE002FB67E = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +197,7 @@
 		7419D7EA1E11EFBE002FB67E /* MySwiftProject */ = {
 			isa = PBXGroup;
 			children = (
+				7418711A1E1A8BFF00900436 /* View */,
 				74A1FDD71E1A4BDC0018801F /* Controller */,
 				74A1FDD61E1A4BD00018801F /* Storyboard */,
 				74A1FDC51E1A4A000018801F /* Extension */,
@@ -194,9 +205,7 @@
 				74923C7B1E178103001A51DF /* ReactTestView.h */,
 				74923C7C1E178103001A51DF /* ReactTestView.m */,
 				7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */,
-				7419D7EF1E11EFBE002FB67E /* Main.storyboard */,
 				7419D7F21E11EFBE002FB67E /* Assets.xcassets */,
-				7419D7F41E11EFBE002FB67E /* LaunchScreen.storyboard */,
 				7419D7F71E11EFBE002FB67E /* Info.plist */,
 			);
 			path = MySwiftProject;
@@ -278,6 +287,8 @@
 		74A1FDD61E1A4BD00018801F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */,
+				744FE0BC1E1A720100587862 /* Main.storyboard */,
 				74A1FDE61E1A50890018801F /* Second.storyboard */,
 			);
 			name = Storyboard;
@@ -467,12 +478,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7419D7F61E11EFBE002FB67E /* LaunchScreen.storyboard in Resources */,
 				7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */,
-				7419D7F11E11EFBE002FB67E /* Main.storyboard in Resources */,
 				7419D8061E11F1A0002FB67E /* www in Resources */,
 				74A1FDE71E1A50890018801F /* Second.storyboard in Resources */,
+				744FE0BF1E1A720100587862 /* Main.storyboard in Resources */,
 				7419D8041E11F16F002FB67E /* config.xml in Resources */,
+				744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */,
 				74A1FDD91E1A4DED0018801F /* TwoViewController.xib in Resources */,
 				74A1FDE21E1A4EE40018801F /* ThreeViewController.xib in Resources */,
 			);
@@ -513,6 +524,7 @@
 				7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */,
 				74A1FDDF1E1A4EE40018801F /* H5ViewController.swift in Sources */,
 				74A1FDE11E1A4EE40018801F /* ThreeViewController.swift in Sources */,
+				741871191E1A8BF900900436 /* ReactView.swift in Sources */,
 				74A1FDD01E1A4A430018801F /* UIStoryboard+Storyboards.swift in Sources */,
 				74A1FDE91E1A52F30018801F /* SecondOneViewController.swift in Sources */,
 			);
@@ -529,20 +541,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7419D7EF1E11EFBE002FB67E /* Main.storyboard */ = {
+		744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7419D7F01E11EFBE002FB67E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7419D7F41E11EFBE002FB67E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7419D7F51E11EFBE002FB67E /* Base */,
+				744FE0BB1E1A720100587862 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		744FE0BC1E1A720100587862 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				744FE0BD1E1A720100587862 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -650,6 +662,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = MySwiftProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -671,6 +684,7 @@
 					"$(SRCROOT)/../node_modules/react-native/React/**",
 				);
 				INFOPLIST_FILE = MySwiftProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-ObjC",

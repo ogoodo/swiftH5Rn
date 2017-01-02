@@ -11,11 +11,13 @@ import UIKit
 class ThreeViewController: UIViewController {
 
     @IBAction func goHomePage(_ sender: UIButton) {
-        navigationController?.popToRootViewController(animated:true)
+        _ = navigationController?.popToRootViewController(animated:true)
     }
+
     @IBAction func goPrevPage(_ sender: UIButton) {
-        navigationController?.popViewController(animated:true)
+        _ = navigationController?.popViewController(animated:true)
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

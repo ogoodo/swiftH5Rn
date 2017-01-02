@@ -14,7 +14,7 @@ extension UIStoryboard {
     
     enum Storyboard: String {
         case Second
-        case news
+        case Main
         case gallery
         
         var filename: String {
