@@ -56,6 +56,13 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
+    @IBAction func openWKWebView(_ sender: UIButton) {
+        let sb = UIStoryboard(storyboard: .Main)
+        let vc: WKWebViewController = sb.instantiateViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        // self.navigationController?.setNavigationBarHidden(true, animated: true )
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

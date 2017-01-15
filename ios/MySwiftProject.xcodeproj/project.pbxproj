@@ -14,6 +14,7 @@
 		7419D8061E11F1A0002FB67E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7419D8051E11F1A0002FB67E /* www */; };
 		7419D8091E11F27C002FB67E /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7419D8021E11F132002FB67E /* libCordova.a */; };
 		7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */; };
+		7448D8171E2311AD004F296B /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7448D8161E2311AD004F296B /* WKWebViewController.swift */; };
 		744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */; };
 		744FE0BF1E1A720100587862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BC1E1A720100587862 /* Main.storyboard */; };
 		74923C721E175D89001A51DF /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C551E175C1A001A51DF /* libRCTNetwork.a */; };
@@ -126,6 +127,7 @@
 		7419D8051E11F1A0002FB67E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		7419D80B1E11F36F002FB67E /* MySwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoViewController.swift; path = Controller/TwoViewController.swift; sourceTree = "<group>"; };
+		7448D8161E2311AD004F296B /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WKWebViewController.swift; path = Controller/WKWebViewController.swift; sourceTree = "<group>"; };
 		744FE0BB1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744FE0BD1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74923C461E175B2D001A51DF /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */,
 				74A1FDE81E1A52F30018801F /* SecondOneViewController.swift */,
 				74A1FDEA1E1A56B90018801F /* SecondTwoViewController.swift */,
+				7448D8161E2311AD004F296B /* WKWebViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				74A1FDEB1E1A56B90018801F /* SecondTwoViewController.swift in Sources */,
 				74A1FDE01E1A4EE40018801F /* RNViewController.swift in Sources */,
 				74923C7D1E178103001A51DF /* ReactTestView.m in Sources */,
+				7448D8171E2311AD004F296B /* WKWebViewController.swift in Sources */,
 				74A1FDD41E1A4B7F0018801F /* StoryboardIdentifiable.swift in Sources */,
 				74A1FDE51E1A4F5A0018801F /* UIViewController+StoryboardIdentifier.swift in Sources */,
 				7419D7EC1E11EFBE002FB67E /* AppDelegate.swift in Sources */,

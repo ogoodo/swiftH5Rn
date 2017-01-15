@@ -13,7 +13,7 @@
         <scene sceneID="2RU-xn-yOx">
             <objects>
                 <navigationController id="wNY-MW-5mt" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mAH-lG-nrd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mAH-lG-nrd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -68,14 +68,6 @@
                                     <segue destination="orc-sY-w6Y" kind="show" id="8R9-t2-9fk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-wF-oxj">
-                                <rect key="frame" x="54" y="246" width="110" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="open sb RnView"/>
-                                <connections>
-                                    <action selector="openSBMyRnView:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8G-vJ-ur5"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOp-yC-oak">
                                 <rect key="frame" x="54" y="322" width="126" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -108,6 +100,22 @@
                                     <action selector="openOtherSbView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4bC-YR-dlR"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c7-88-Iyz">
+                                <rect key="frame" x="54" y="436" width="155" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open sb WKWebView"/>
+                                <connections>
+                                    <action selector="openWKWebView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVO-A4-EvC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-wF-oxj">
+                                <rect key="frame" x="54" y="259" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open sb RnView"/>
+                                <connections>
+                                    <action selector="openSBMyRnView:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8G-vJ-ur5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -118,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-377" y="-81"/>
+            <point key="canvasLocation" x="-377.5" y="-81.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TR6-dM-Mx0">
@@ -153,7 +161,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkn-Nv-guS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="558" y="20"/>
+            <point key="canvasLocation" x="665" y="36"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="zEN-3q-PyE">
+            <objects>
+                <viewController storyboardIdentifier="WKWebViewController" id="tdn-cE-TPW" customClass="WKWebViewController" customModule="MySwiftProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sIY-Zz-fcn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivI-wf-RkO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Jw-t0-igU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W20-uq-HBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="786"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="o31-Nh-Ra2">
@@ -197,6 +223,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YOo-G6-lOo"/>
+        <segue reference="iXg-zB-G6b"/>
     </inferredMetricsTieBreakers>
 </document>
