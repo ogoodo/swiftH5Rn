@@ -15,3 +15,6 @@
 
 #import "ReactTestView.h"
 
+// WXWebView使用jscore
+#import <JavaScriptCore/JavaScriptCore.h>
+
