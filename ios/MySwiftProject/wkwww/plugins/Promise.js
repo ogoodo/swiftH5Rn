@@ -8,6 +8,7 @@ window.msg = (function(){
     msg.handlers = {};
 
     msg.callback = function (callbackID, error, data) {
+        console.log('msg.callback:', callbackID, error, data)
         if (error){
             this.handlers[callbackID].resolve(data);
         }else{
@@ -16,11 +17,17 @@ window.msg = (function(){
         delete this.handlers[callbackID];
     }
 
-    msg.send = function (data) {
+    msg.send = function (className, functionName, data) {
         return new Promise((resolve, reject) => {
             const callbackID = this.callbackID++;
             this.handlers[callbackID] = { resolve, reject};
-            window.webkit.messageHandlers.myapi.postMessage({data: data, callbackID: callbackID});
+            var param = {
+                className: className,
+                functionName: functionName,
+                callbackID: callbackID,
+                param: data
+            }
+            window.webkit.messageHandlers.myapi.postMessage(param);
         });
     }
     return msg

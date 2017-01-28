@@ -43,6 +43,7 @@ var btnsInit = function(){
 		}
         if (btnText ==btns[1]) {
             // consoleex.log('nihao')
+            window.mytest.testPromiseCallback('testPromiseCallback..')
             window.mytest.jsCallNative('hi')
 			var message = {
                             'className': 'Callme',

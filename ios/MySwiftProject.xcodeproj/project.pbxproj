@@ -14,17 +14,14 @@
 		7419D8061E11F1A0002FB67E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7419D8051E11F1A0002FB67E /* www */; };
 		7419D8091E11F27C002FB67E /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7419D8021E11F132002FB67E /* libCordova.a */; };
 		741E42911E2BA780001739AA /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 741E42901E2BA780001739AA /* index2.html */; };
+		74254C041E3C84D400DC43BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74254C031E3C84D400DC43BC /* Info.plist */; };
+		74254C061E3C930400DC43BC /* wkwww in Resources */ = {isa = PBXBuildFile; fileRef = 74254C051E3C930400DC43BC /* wkwww */; };
 		7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */; };
 		744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */; };
 		744FE0BF1E1A720100587862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BC1E1A720100587862 /* Main.storyboard */; };
 		747341A81E398A4B008FBE5A /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747341A71E398A4B008FBE5A /* WKWebViewController.swift */; };
 		747341AA1E398B01008FBE5A /* Callme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747341A91E398B01008FBE5A /* Callme.swift */; };
 		747341AF1E399E8C008FBE5A /* Plugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747341AE1E399E8C008FBE5A /* Plugin.swift */; };
-		747341B91E399FE2008FBE5A /* base.css in Resources */ = {isa = PBXBuildFile; fileRef = 747341B31E399FE2008FBE5A /* base.css */; };
-		747341BA1E399FE2008FBE5A /* common.js in Resources */ = {isa = PBXBuildFile; fileRef = 747341B41E399FE2008FBE5A /* common.js */; };
-		747341BB1E399FE2008FBE5A /* index3.html in Resources */ = {isa = PBXBuildFile; fileRef = 747341B51E399FE2008FBE5A /* index3.html */; };
-		747341BC1E399FE2008FBE5A /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 747341B61E399FE2008FBE5A /* jquery.js */; };
-		747341BD1E399FE2008FBE5A /* Console.js in Resources */ = {isa = PBXBuildFile; fileRef = 747341B81E399FE2008FBE5A /* Console.js */; };
 		747341BF1E39A7E1008FBE5A /* Console.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747341BE1E39A7E1008FBE5A /* Console.swift */; };
 		74923C721E175D89001A51DF /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C551E175C1A001A51DF /* libRCTNetwork.a */; };
 		74923C741E175D89001A51DF /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74923C5E1E175C8F001A51DF /* libRCTText.a */; };
@@ -43,9 +40,7 @@
 		74A1FDE71E1A50890018801F /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A1FDE61E1A50890018801F /* Second.storyboard */; };
 		74A1FDE91E1A52F30018801F /* SecondOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1FDE81E1A52F30018801F /* SecondOneViewController.swift */; };
 		74A1FDEB1E1A56B90018801F /* SecondTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1FDEA1E1A56B90018801F /* SecondTwoViewController.swift */; };
-		74CDC53A1E3AEF6C00D8A7E0 /* Test.js in Resources */ = {isa = PBXBuildFile; fileRef = 74CDC5391E3AEF6C00D8A7E0 /* Test.js */; };
 		74CDC5451E3AFF5800D8A7E0 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDC5441E3AFF5800D8A7E0 /* Test.swift */; };
-		74CDC5471E3B15F400D8A7E0 /* Promise.js in Resources */ = {isa = PBXBuildFile; fileRef = 74CDC5461E3B15F400D8A7E0 /* Promise.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,23 +128,19 @@
 		7419D7E81E11EFBE002FB67E /* MySwiftProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7419D7F21E11EFBE002FB67E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7419D7F71E11EFBE002FB67E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7419D7FD1E11F131002FB67E /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		7419D8031E11F16F002FB67E /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = config.xml; path = MySwiftProject/config.xml; sourceTree = "<group>"; };
 		7419D8051E11F1A0002FB67E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		7419D80B1E11F36F002FB67E /* MySwiftProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySwiftProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		741E42901E2BA780001739AA /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index2.html; path = Assets.xcassets/index2.html; sourceTree = "<group>"; };
+		74254C031E3C84D400DC43BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74254C051E3C930400DC43BC /* wkwww */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wkwww; sourceTree = "<group>"; };
 		7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoViewController.swift; path = Controller/TwoViewController.swift; sourceTree = "<group>"; };
 		744FE0BB1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744FE0BD1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		747341A71E398A4B008FBE5A /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WKWebViewController.swift; path = wk/WKWebViewController.swift; sourceTree = "<group>"; };
 		747341A91E398B01008FBE5A /* Callme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Callme.swift; path = wk/Callme.swift; sourceTree = "<group>"; };
 		747341AE1E399E8C008FBE5A /* Plugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Plugin.swift; path = wk/Plugin.swift; sourceTree = "<group>"; };
-		747341B31E399FE2008FBE5A /* base.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = base.css; sourceTree = "<group>"; };
-		747341B41E399FE2008FBE5A /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
-		747341B51E399FE2008FBE5A /* index3.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index3.html; sourceTree = "<group>"; };
-		747341B61E399FE2008FBE5A /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
-		747341B81E399FE2008FBE5A /* Console.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Console.js; sourceTree = "<group>"; };
 		747341BE1E39A7E1008FBE5A /* Console.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Console.swift; path = wk/Console.swift; sourceTree = "<group>"; };
 		74923C461E175B2D001A51DF /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		74923C4F1E175C19001A51DF /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
@@ -170,9 +161,7 @@
 		74A1FDE81E1A52F30018801F /* SecondOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondOneViewController.swift; path = Controller/SecondOneViewController.swift; sourceTree = "<group>"; };
 		74A1FDEA1E1A56B90018801F /* SecondTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondTwoViewController.swift; path = Controller/SecondTwoViewController.swift; sourceTree = "<group>"; };
 		74B11BA61E178F1100BCCAFA /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
-		74CDC5391E3AEF6C00D8A7E0 /* Test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test.js; sourceTree = "<group>"; };
 		74CDC5441E3AFF5800D8A7E0 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = wk/Test.swift; sourceTree = "<group>"; };
-		74CDC5461E3B15F400D8A7E0 /* Promise.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Promise.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,7 +212,7 @@
 		7419D7EA1E11EFBE002FB67E /* MySwiftProject */ = {
 			isa = PBXGroup;
 			children = (
-				747341B21E399FE2008FBE5A /* www */,
+				74254C051E3C930400DC43BC /* wkwww */,
 				7473419D1E398A0F008FBE5A /* wk */,
 				741E429B1E2BA809001739AA /* Assets */,
 				7418711A1E1A8BFF00900436 /* View */,
@@ -235,7 +224,7 @@
 				74923C7C1E178103001A51DF /* ReactTestView.m */,
 				7419D7EB1E11EFBE002FB67E /* AppDelegate.swift */,
 				7419D7F21E11EFBE002FB67E /* Assets.xcassets */,
-				7419D7F71E11EFBE002FB67E /* Info.plist */,
+				74254C031E3C84D400DC43BC /* Info.plist */,
 			);
 			path = MySwiftProject;
 			sourceTree = "<group>";
@@ -266,28 +255,6 @@
 				74CDC5441E3AFF5800D8A7E0 /* Test.swift */,
 			);
 			name = wk;
-			sourceTree = "<group>";
-		};
-		747341B21E399FE2008FBE5A /* www */ = {
-			isa = PBXGroup;
-			children = (
-				747341B31E399FE2008FBE5A /* base.css */,
-				747341B41E399FE2008FBE5A /* common.js */,
-				747341B51E399FE2008FBE5A /* index3.html */,
-				747341B61E399FE2008FBE5A /* jquery.js */,
-				747341B71E399FE2008FBE5A /* plugins */,
-			);
-			path = www;
-			sourceTree = "<group>";
-		};
-		747341B71E399FE2008FBE5A /* plugins */ = {
-			isa = PBXGroup;
-			children = (
-				747341B81E399FE2008FBE5A /* Console.js */,
-				74CDC5391E3AEF6C00D8A7E0 /* Test.js */,
-				74CDC5461E3B15F400D8A7E0 /* Promise.js */,
-			);
-			path = plugins;
 			sourceTree = "<group>";
 		};
 		74923C451E175B2C001A51DF /* Frameworks */ = {
@@ -549,21 +516,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747341BA1E399FE2008FBE5A /* common.js in Resources */,
+				74254C061E3C930400DC43BC /* wkwww in Resources */,
 				7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */,
-				747341BD1E399FE2008FBE5A /* Console.js in Resources */,
-				74CDC53A1E3AEF6C00D8A7E0 /* Test.js in Resources */,
-				74CDC5471E3B15F400D8A7E0 /* Promise.js in Resources */,
 				7419D8061E11F1A0002FB67E /* www in Resources */,
 				74A1FDE71E1A50890018801F /* Second.storyboard in Resources */,
 				741E42911E2BA780001739AA /* index2.html in Resources */,
-				747341BB1E399FE2008FBE5A /* index3.html in Resources */,
 				744FE0BF1E1A720100587862 /* Main.storyboard in Resources */,
-				747341BC1E399FE2008FBE5A /* jquery.js in Resources */,
 				7419D8041E11F16F002FB67E /* config.xml in Resources */,
-				747341B91E399FE2008FBE5A /* base.css in Resources */,
 				744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */,
 				74A1FDD91E1A4DED0018801F /* TwoViewController.xib in Resources */,
+				74254C041E3C84D400DC43BC /* Info.plist in Resources */,
 				74A1FDE21E1A4EE40018801F /* ThreeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

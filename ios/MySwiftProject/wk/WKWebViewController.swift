@@ -1,7 +1,8 @@
 import UIKit
 import WebKit
 
-
+let wkwwwRoot = "wkwww"
+let wkwwwPlugins = "\(wkwwwRoot)/plugins"
 class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
     
     var wk: WKWebView!
@@ -101,9 +102,16 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
     // 注入JS, 在页面加载前就能注入好
     func runPluginJS(_ names: Array<String>) {
         for name in names {
-            // let path = Bundle.main.path(forResource: name, ofType: "js")
-            let path = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "www/plugins")
-            let path2 = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "MySwiftProject/www/plugins")
+//            let subdir = Bundle.main.resourceURL!.appendingPathComponent("www/plugins").path
+//            let resourcePath = Bundle.main.resourcePath
+//            let url = Bundle.main.url(forResource: "www", withExtension: nil)
+//            let url2 = Bundle.main.url(forResource: "www/plugins", withExtension: nil)
+//            let url3 = Bundle.main.url(forResource: "www/plugins/\(name).js", withExtension: nil)
+//            let path3 = Bundle.main.path(forResource: name, ofType: "js")
+//            // let path = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "www/plugins")
+//            let path2 = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "MySwiftProject/www/plugins")
+//            let path6 = "file:///\(resourcePath!)/www/plugins/\(name).js"
+            let path = Bundle.main.path(forResource: name, ofType: "js", inDirectory: wkwwwPlugins)
             if path == nil {
                 NSLog("注入JS文件不存在:%@", name)
                 continue
@@ -127,7 +135,7 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
         // CODE
         //从本地加载html
         // let path:String! = NSBundle.mainBundle().pathForResource("index", ofType: "html")
-        let htmlPath = Bundle.main.path(forResource: "index3", ofType: "html")
+        let htmlPath = Bundle.main.path(forResource: "index3", ofType: "html", inDirectory: wkwwwRoot)
         wk.load(NSURLRequest(url: NSURL.fileURL(withPath: htmlPath!)) as URLRequest)
         NSLog("click buttonHtmlString")
     }
@@ -306,7 +314,10 @@ extension wkScriptMessageHandler {
                     let obj = cls.init()
                     obj.wk = self.wk
                     obj.taskId = (dic["taskId"] as AnyObject).intValue
+                    obj.callbackId = (dic["callbackID"] as AnyObject).intValue
                     obj.data = (dic["data"] as AnyObject).description
+                    obj.param = dic["param"] as? NSDictionary as! Dictionary<String, Any>?
+                    let param = dic["param"] as? NSDictionary
                     let functionSelector = Selector(functionName)
                     if obj.responds(to: functionSelector) {
                         obj.perform(functionSelector)

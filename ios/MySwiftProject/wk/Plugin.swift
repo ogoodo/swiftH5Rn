@@ -12,12 +12,17 @@ import WebKit
 class Plugin: NSObject {
     var wk: WKWebView!
     var callbackId: Int!
+    var param: Dictionary<String, Any>?
     var taskId: Int!
     var data: String?
     required override init() {
     }
     // 处理完成回调js
     func callback(_ error: Bool, _ values: NSDictionary) -> Bool {
+        if self.callbackId == nil {
+            NSLog("❌回调js函数callbackId不能为nil")
+            return false
+        }
         do {
             let jsonData = try JSONSerialization.data(withJSONObject: values, options: JSONSerialization.WritingOptions())
             if let jsonString = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) as? String {
