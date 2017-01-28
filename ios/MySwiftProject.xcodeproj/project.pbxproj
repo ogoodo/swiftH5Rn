@@ -43,6 +43,9 @@
 		74A1FDE71E1A50890018801F /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A1FDE61E1A50890018801F /* Second.storyboard */; };
 		74A1FDE91E1A52F30018801F /* SecondOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1FDE81E1A52F30018801F /* SecondOneViewController.swift */; };
 		74A1FDEB1E1A56B90018801F /* SecondTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A1FDEA1E1A56B90018801F /* SecondTwoViewController.swift */; };
+		74CDC53A1E3AEF6C00D8A7E0 /* Test.js in Resources */ = {isa = PBXBuildFile; fileRef = 74CDC5391E3AEF6C00D8A7E0 /* Test.js */; };
+		74CDC5451E3AFF5800D8A7E0 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CDC5441E3AFF5800D8A7E0 /* Test.swift */; };
+		74CDC5471E3B15F400D8A7E0 /* Promise.js in Resources */ = {isa = PBXBuildFile; fileRef = 74CDC5461E3B15F400D8A7E0 /* Promise.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +170,9 @@
 		74A1FDE81E1A52F30018801F /* SecondOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondOneViewController.swift; path = Controller/SecondOneViewController.swift; sourceTree = "<group>"; };
 		74A1FDEA1E1A56B90018801F /* SecondTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondTwoViewController.swift; path = Controller/SecondTwoViewController.swift; sourceTree = "<group>"; };
 		74B11BA61E178F1100BCCAFA /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
+		74CDC5391E3AEF6C00D8A7E0 /* Test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Test.js; sourceTree = "<group>"; };
+		74CDC5441E3AFF5800D8A7E0 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Test.swift; path = wk/Test.swift; sourceTree = "<group>"; };
+		74CDC5461E3B15F400D8A7E0 /* Promise.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Promise.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +263,7 @@
 				747341A91E398B01008FBE5A /* Callme.swift */,
 				747341AE1E399E8C008FBE5A /* Plugin.swift */,
 				747341BE1E39A7E1008FBE5A /* Console.swift */,
+				74CDC5441E3AFF5800D8A7E0 /* Test.swift */,
 			);
 			name = wk;
 			sourceTree = "<group>";
@@ -277,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				747341B81E399FE2008FBE5A /* Console.js */,
+				74CDC5391E3AEF6C00D8A7E0 /* Test.js */,
+				74CDC5461E3B15F400D8A7E0 /* Promise.js */,
 			);
 			path = plugins;
 			sourceTree = "<group>";
@@ -543,6 +552,8 @@
 				747341BA1E399FE2008FBE5A /* common.js in Resources */,
 				7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */,
 				747341BD1E399FE2008FBE5A /* Console.js in Resources */,
+				74CDC53A1E3AEF6C00D8A7E0 /* Test.js in Resources */,
+				74CDC5471E3B15F400D8A7E0 /* Promise.js in Resources */,
 				7419D8061E11F1A0002FB67E /* www in Resources */,
 				74A1FDE71E1A50890018801F /* Second.storyboard in Resources */,
 				741E42911E2BA780001739AA /* index2.html in Resources */,
@@ -593,6 +604,7 @@
 				7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */,
 				74A1FDDF1E1A4EE40018801F /* H5ViewController.swift in Sources */,
 				747341A81E398A4B008FBE5A /* WKWebViewController.swift in Sources */,
+				74CDC5451E3AFF5800D8A7E0 /* Test.swift in Sources */,
 				74A1FDE11E1A4EE40018801F /* ThreeViewController.swift in Sources */,
 				747341AA1E398B01008FBE5A /* Callme.swift in Sources */,
 				741871191E1A8BF900900436 /* ReactView.swift in Sources */,

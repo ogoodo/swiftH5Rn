@@ -68,11 +68,13 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
                                                height: screen.size.height - webViewTop - 10), configuration: conf)
         self.view.addSubview(self.wk)
         
+        //禁用页面在最顶端时下拉拖动效果
+        self.wk.scrollView.bounces = false
         // 处理加载过程时间, 加载失败等
         self.wk.navigationDelegate = self
         // 处理alert等事件
         self.wk.uiDelegate = self
-        self.runPluginJS(["Callme",  "Console"])
+        self.runPluginJS(["Promise", "Test", "Callme",  "Console"])
         // self.runPluginJS(["Callme", "Base", "Console", "Accelerometer"])
         //监听状态
         self.wk.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
@@ -82,6 +84,13 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
 //        //监听加载进度
 //        self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         //        // Do any additional setup after loading the view.
+    }
+    
+    // 不知道是不是真的
+    // 还有一点别忘了,对于KVO模式，有add一定要remove,否则会崩溃。我们可以在视图消失的时候添加remove:
+    override func viewWillDisappear(_ animated: Bool) {
+        self.wk.removeObserver(self, forKeyPath: "loading")
+        self.wk.removeObserver(self, forKeyPath: "estimatedProgress")
     }
     
     override func didReceiveMemoryWarning() {
@@ -96,8 +105,13 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
             // let path3 = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "www/plugins")
             if path != nil {
                 do {
+                    NSLog("注入JS文件:%@", path!)
                     let js = try NSString(contentsOfFile: path!, encoding: String.Encoding.utf8.rawValue)
-                    self.wk.evaluateJavaScript(js as String, completionHandler: nil)
+                    // self.wk.evaluateJavaScript(js as String, completionHandler: nil)
+                    self.wk.evaluateJavaScript(js as String, completionHandler: { (any,error) -> Void in
+                        NSLog("❌注入JS错误:%@", error.debugDescription)
+                        // NSLog("%@", any as! String)
+                    })
                 } catch let error as NSError {
                     NSLog(error.debugDescription)
                 }
@@ -230,6 +244,7 @@ extension wkNavigationDelegate {
 private typealias wkUIDelegate = WKWebViewController
 extension wkUIDelegate {
     
+    // 监听通过JS调用警告框
     func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
         let ac = UIAlertController(title: webView.title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         ac.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (aa) -> Void in
@@ -238,6 +253,26 @@ extension wkUIDelegate {
         }))
         self.present(ac, animated: true, completion: nil)
     }
+    
+    // 监听通过JS调用提示框
+    func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+        NSLog("监听通过JS调用提示框")
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+            completionHandler(true)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (action) in
+            completionHandler(false)
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    // 监听JS调用输入框
+    func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+        // 类似上面两个方法
+        NSLog("监听JS调用输入框")
+    }
+    
 }
 
 // WKScriptMessageHandler: 提供从网页中收消息的回调方法。
@@ -246,6 +281,18 @@ private typealias wkScriptMessageHandler = WKWebViewController
 extension wkScriptMessageHandler {
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        let msg = message.body as! NSDictionary
+        let plugin = msg["className"] as! String
+        let method = msg["functionName"] as! String
+        // let args = transformArguments(message["arguments"] as! [AnyObject])
+        var callbackID = -1;
+        if msg["callbackID"] != nil {
+            callbackID = msg["callbackID"] as! Int
+            NSLog("callbackID true")
+        } else {
+            NSLog("callbackID false")
+        }
+        
         print("userContentController:", message.name)
         print("userContentController:", message.body)
         if message.name == "myapi" {

@@ -42,7 +42,8 @@ var btnsInit = function(){
 			hi()
 		}
         if (btnText ==btns[1]) {
-            consoleex.log('nihao')
+            // consoleex.log('nihao')
+            window.mytest.jsCallNative('hi')
 			var message = {
                             'className': 'Callme',
                             'functionName': 'testfunc',
