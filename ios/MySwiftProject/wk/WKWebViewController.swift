@@ -101,20 +101,23 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
     // 注入JS, 在页面加载前就能注入好
     func runPluginJS(_ names: Array<String>) {
         for name in names {
-            let path = Bundle.main.path(forResource: name, ofType: "js")
-            // let path3 = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "www/plugins")
-            if path != nil {
-                do {
-                    NSLog("注入JS文件:%@", path!)
-                    let js = try NSString(contentsOfFile: path!, encoding: String.Encoding.utf8.rawValue)
-                    // self.wk.evaluateJavaScript(js as String, completionHandler: nil)
-                    self.wk.evaluateJavaScript(js as String, completionHandler: { (any,error) -> Void in
-                        NSLog("❌注入JS错误:%@", error.debugDescription)
-                        // NSLog("%@", any as! String)
-                    })
-                } catch let error as NSError {
-                    NSLog(error.debugDescription)
-                }
+            // let path = Bundle.main.path(forResource: name, ofType: "js")
+            let path = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "www/plugins")
+            let path2 = Bundle.main.path(forResource: name, ofType: "js", inDirectory: "MySwiftProject/www/plugins")
+            if path == nil {
+                NSLog("注入JS文件不存在:%@", name)
+                continue
+            }
+            do {
+                NSLog("注入JS文件:%@", path!)
+                let js = try NSString(contentsOfFile: path!, encoding: String.Encoding.utf8.rawValue)
+                // self.wk.evaluateJavaScript(js as String, completionHandler: nil)
+                self.wk.evaluateJavaScript(js as String, completionHandler: { (any,error) -> Void in
+                    NSLog("❌注入JS错误:%@", error.debugDescription)
+                    // NSLog("%@", any as! String)
+                })
+            } catch let error as NSError {
+                NSLog(error.debugDescription)
             }
         }
     }
