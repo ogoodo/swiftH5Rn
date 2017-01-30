@@ -30,7 +30,13 @@ var getName = function(){
 
 
 var btnsInit = function(){
-	var btns = ["js-btn:调用自身js的hi方法","js-btn:调用ios的hello方法"]
+	var btns = [
+		"js-btn:调用自身js的hi方法",
+		"js-btn:调用ios的hello方法",
+		"打开一个窗口",
+		"返回一个窗口",
+		"返回根窗口",
+	]
 	$.each(btns,function(i,item){
 		var btnHtml = "<a>" + item+"</a>"
 		$(".btns").append(btnHtml)
@@ -43,17 +49,52 @@ var btnsInit = function(){
 		}
         if (btnText ==btns[1]) {
             // consoleex.log('nihao')
-            window.mytest.testPromiseCallback('testPromiseCallback..')
-            window.mytest.jsCallNative('hi')
+            window.mytest.testPromiseCallbackSuccess('testPromiseCallbackSuccess..')
+			.then(function() {
+				console.log('调用native后promise返回成功')
+			}).catch(function() {
+				console.log('调用native后promise返回失败')
+			});
+            window.mytest.testPromiseCallbackFail('testPromiseCallbackFail..')
+			.then(function() {
+				console.log('调用native后promise返回成功')
+			}).catch(function() {
+				console.log('调用native后promise返回失败')
+			});
+            // window.mytest.jsCallNative('hi')
 			var message = {
                             'className': 'Callme',
                             'functionName': 'testfunc',
 							'method' : 'hello',
 							'param1' : 'liuyanwei',
 					    	};
-            window.webkit.messageHandlers.myapi.postMessage(message);
+            // window.webkit.messageHandlers.myapi.postMessage(message);
 		}
-	})	
+        if (btnText ==btns[2]) {
+            window.mytest.pushH5('testPromiseCallbackSuccess..')
+			.then(function() {
+				console.log('调用native后promise返回成功')
+			}).catch(function() {
+				console.log('调用native后promise返回失败')
+			});
+		}
+        if (btnText ==btns[3]) {
+            window.mytest.popH5('testPromiseCallbackSuccess..')
+			.then(function() {
+				console.log('调用native后promise返回成功')
+			}).catch(function() {
+				console.log('调用native后promise返回失败')
+			});
+		}
+        if (btnText ==btns[4]) {
+            window.mytest.popToRoot('testPromiseCallbackSuccess..')
+			.then(function() {
+				console.log('调用native后promise返回成功')
+			}).catch(function() {
+				console.log('调用native后promise返回失败')
+			});
+		}
+	})
 
 	showInfo("html加载完成")
 }

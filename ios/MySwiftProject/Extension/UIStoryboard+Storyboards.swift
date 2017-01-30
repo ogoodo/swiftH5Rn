@@ -16,6 +16,7 @@ extension UIStoryboard {
         case Second
         case Main
         case gallery
+        case WKH5
         
         var filename: String {
             return rawValue.capitalized

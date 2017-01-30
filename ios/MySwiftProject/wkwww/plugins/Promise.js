@@ -7,12 +7,17 @@ window.msg = (function(){
     msg.callbackID = 1;
     msg.handlers = {};
 
+    /**
+     * @param {number} callbackID
+     * @param {number} error 0:成功, >0部分表示失败原因
+     * @param {object} data native传递给js的参数
+     */
     msg.callback = function (callbackID, error, data) {
         console.log('msg.callback:', callbackID, error, data)
         if (error){
-            this.handlers[callbackID].resolve(data);
-        }else{
             this.handlers[callbackID].reject(data);
+        }else{
+            this.handlers[callbackID].resolve(data);
         }
         delete this.handlers[callbackID];
     }

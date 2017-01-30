@@ -16,6 +16,8 @@
 		741E42911E2BA780001739AA /* index2.html in Resources */ = {isa = PBXBuildFile; fileRef = 741E42901E2BA780001739AA /* index2.html */; };
 		74254C041E3C84D400DC43BC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74254C031E3C84D400DC43BC /* Info.plist */; };
 		74254C061E3C930400DC43BC /* wkwww in Resources */ = {isa = PBXBuildFile; fileRef = 74254C051E3C930400DC43BC /* wkwww */; };
+		74254C081E3DD51700DC43BC /* H5Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74254C071E3DD51700DC43BC /* H5Window.swift */; };
+		74254C0A1E3ECDA800DC43BC /* Wkh5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74254C091E3ECDA800DC43BC /* Wkh5.storyboard */; };
 		7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */; };
 		744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */; };
 		744FE0BF1E1A720100587862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BC1E1A720100587862 /* Main.storyboard */; };
@@ -135,6 +137,8 @@
 		741E42901E2BA780001739AA /* index2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = index2.html; path = Assets.xcassets/index2.html; sourceTree = "<group>"; };
 		74254C031E3C84D400DC43BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74254C051E3C930400DC43BC /* wkwww */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wkwww; sourceTree = "<group>"; };
+		74254C071E3DD51700DC43BC /* H5Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = H5Window.swift; path = wk/H5Window.swift; sourceTree = "<group>"; };
+		74254C091E3ECDA800DC43BC /* Wkh5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Wkh5.storyboard; path = Stroybroad/Wkh5.storyboard; sourceTree = "<group>"; };
 		7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoViewController.swift; path = Controller/TwoViewController.swift; sourceTree = "<group>"; };
 		744FE0BB1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744FE0BD1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 				747341AE1E399E8C008FBE5A /* Plugin.swift */,
 				747341BE1E39A7E1008FBE5A /* Console.swift */,
 				74CDC5441E3AFF5800D8A7E0 /* Test.swift */,
+				74254C071E3DD51700DC43BC /* H5Window.swift */,
 			);
 			name = wk;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */,
 				744FE0BC1E1A720100587862 /* Main.storyboard */,
 				74A1FDE61E1A50890018801F /* Second.storyboard */,
+				74254C091E3ECDA800DC43BC /* Wkh5.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -517,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74254C061E3C930400DC43BC /* wkwww in Resources */,
+				74254C0A1E3ECDA800DC43BC /* Wkh5.storyboard in Resources */,
 				7419D7F31E11EFBE002FB67E /* Assets.xcassets in Resources */,
 				7419D8061E11F1A0002FB67E /* www in Resources */,
 				74A1FDE71E1A50890018801F /* Second.storyboard in Resources */,
@@ -568,6 +575,7 @@
 				747341A81E398A4B008FBE5A /* WKWebViewController.swift in Sources */,
 				74CDC5451E3AFF5800D8A7E0 /* Test.swift in Sources */,
 				74A1FDE11E1A4EE40018801F /* ThreeViewController.swift in Sources */,
+				74254C081E3DD51700DC43BC /* H5Window.swift in Sources */,
 				747341AA1E398B01008FBE5A /* Callme.swift in Sources */,
 				741871191E1A8BF900900436 /* ReactView.swift in Sources */,
 				74A1FDD01E1A4A430018801F /* UIStoryboard+Storyboards.swift in Sources */,

@@ -10,7 +10,7 @@ import UIKit
 
 class Console: Plugin {
     func log() {
-        if let string = self.data {
+        if let string = self.getParam() {
             NSLog("SwiftConsole>>> " + string)
         }
     }

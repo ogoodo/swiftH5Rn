@@ -10,7 +10,7 @@ import UIKit
 
 class Test: Plugin {
     func jsCallNative() {
-        if let string = self.data {
+        if let string = self.getParam() {
             NSLog("native函数jsCallNative输出>>> " + string)
         }
         self.nativeCallJs()
@@ -24,12 +24,14 @@ class Test: Plugin {
     }
     
     
-    func testPromiseCallback() {
+    func testPromiseCallbackSuccess() {
         let dic: NSDictionary  = ["a":"b", "C":"D"];
-        let ret = self.callback(false, dic)
-//        self.wk.evaluateJavaScript("window.mytest.getName()") { (any,error) -> Void in
-//            NSLog("native函数testPromiseCallback调用JS函数window.mytest.getName()输出:%@", any as! String)
-//        }
+        _ = self.callbackSuccess(dic)
+    }
+
+    func testPromiseCallbackFail() {
+        let dic: NSDictionary  = ["a":"b", "C":"D"];
+        _ = self.callbackFail(404, dic)
     }
 
 }

@@ -78,8 +78,8 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
         self.runPluginJS(["Promise", "Test", "Callme",  "Console"])
         // self.runPluginJS(["Callme", "Base", "Console", "Accelerometer"])
         //监听状态
-        self.wk.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
-        self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
+//        self.wk.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
+//        self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
 //        //监听是否可以前进后退，修改btn.enable属性
 //        self.wk.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
 //        //监听加载进度
@@ -87,13 +87,23 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
         //        // Do any additional setup after loading the view.
     }
     
+    // 视图将要出现
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //监听状态, 不知道这个监听有没有问题
+        self.wk.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
+        self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
+//        self.wk.removeObserver(self, forKeyPath: "loading")
+//        self.wk.removeObserver(self, forKeyPath: "estimatedProgress")
+    }
     // 不知道是不是真的
     // 还有一点别忘了,对于KVO模式，有add一定要remove,否则会崩溃。我们可以在视图消失的时候添加remove:
     override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
         self.wk.removeObserver(self, forKeyPath: "loading")
         self.wk.removeObserver(self, forKeyPath: "estimatedProgress")
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -313,11 +323,11 @@ extension wkScriptMessageHandler {
                 if let cls = NSClassFromString((Bundle.main.object(forInfoDictionaryKey: "CFBundleName")! as AnyObject).description + "." + className) as? Plugin.Type{
                     let obj = cls.init()
                     obj.wk = self.wk
-                    obj.taskId = (dic["taskId"] as AnyObject).intValue
+                    // obj.taskId = (dic["taskId"] as AnyObject).intValue
                     obj.callbackId = (dic["callbackID"] as AnyObject).intValue
-                    obj.data = (dic["data"] as AnyObject).description
+                    // obj.data = (dic["data"] as AnyObject).description
                     obj.param = dic["param"] as? NSDictionary as! Dictionary<String, Any>?
-                    let param = dic["param"] as? NSDictionary
+                    // let param = dic["param"] as? NSDictionary
                     let functionSelector = Selector(functionName)
                     if obj.responds(to: functionSelector) {
                         obj.perform(functionSelector)
