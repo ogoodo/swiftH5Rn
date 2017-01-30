@@ -22,7 +22,8 @@ class ReactView: UIView {
     // let url22 = NSURL(string: "http://localhost:8081/index.ios.bundle?platform=ios")
     // let url = NSURL(string: "http://192.168.1.105:8081/index.ios.bundle?platform=ios&dev=true")
     let rootView: RCTRootView = RCTRootView(
-        bundleURL: NSURL(string: "http://192.168.1.105:8081/index.ios.bundle?platform=ios&dev=true") as URL!,
+        // bundleURL: NSURL(string: "http://192.168.1.105:8081/index.ios.bundle?platform=ios&dev=true") as URL!,
+        bundleURL: NSURL(string: "http://10.180.186.4:8081/index.ios.bundle?platform=ios&dev=true") as URL!,
         // bundleURL: url as URL!,
         moduleName:"MySwiftProject", initialProperties: nil, launchOptions: nil)
     

@@ -16,15 +16,19 @@ class ViewController: UIViewController {
     @IBAction func go(_ sender: UIButton) {
         self.myLabel.text = "hello world!"
     }
-
+    
+    //        guard let vc = storyboard?.instantiateViewController(withIdentifier: "RNViewController") else {
+    //            print("View controller myRnView not found")
+    //            return
+    //        }
+    //        navigationController?.pushViewController(vc, animated: true)
+    //        return;
     @IBAction func openSBMyRnView(_ sender: UIButton, forEvent event: UIEvent) {
-//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "RNViewController") else {
-//            print("View controller myRnView not found")
-//            return
-//        }
+//        let sb = UIStoryboard(storyboard: .Main)
+//        let vc: RNViewController = sb.instantiateViewController()
 //        navigationController?.pushViewController(vc, animated: true)
-//        return;
-        let sb = UIStoryboard(storyboard: .Main)
+        
+        let sb = UIStoryboard(storyboard: .ReactNative)
         let vc: RNViewController = sb.instantiateViewController()
         navigationController?.pushViewController(vc, animated: true)
     }

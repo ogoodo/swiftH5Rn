@@ -17,6 +17,7 @@ extension UIStoryboard {
         case Main
         case gallery
         case WKH5
+        case ReactNative
         
         var filename: String {
             return rawValue.capitalized

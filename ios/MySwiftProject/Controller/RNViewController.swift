@@ -41,5 +41,8 @@ class RNViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func backToPre(_ sender: UIButton) {
+        _ = navigationController?.popViewController(animated:true)
+    }
     
 }

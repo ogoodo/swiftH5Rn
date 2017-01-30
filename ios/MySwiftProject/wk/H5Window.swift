@@ -12,7 +12,7 @@ class H5Window: Plugin {
     static var navigationController: UINavigationController?
     
     func pushH5() {
-        let sb = UIStoryboard(storyboard: .Main)
+        let sb = UIStoryboard(storyboard: .WKH5)
         let vc: WKWebViewController = sb.instantiateViewController()
         H5Window.navigationController?.pushViewController(vc, animated: true)
         // H5Window.navigationController?.setNavigationBarHidden(true, animated: true)

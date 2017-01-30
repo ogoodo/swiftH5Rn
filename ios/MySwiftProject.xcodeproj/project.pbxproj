@@ -18,6 +18,7 @@
 		74254C061E3C930400DC43BC /* wkwww in Resources */ = {isa = PBXBuildFile; fileRef = 74254C051E3C930400DC43BC /* wkwww */; };
 		74254C081E3DD51700DC43BC /* H5Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74254C071E3DD51700DC43BC /* H5Window.swift */; };
 		74254C0A1E3ECDA800DC43BC /* Wkh5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74254C091E3ECDA800DC43BC /* Wkh5.storyboard */; };
+		74254C0C1E3ED67D00DC43BC /* Reactnative.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74254C0B1E3ED67D00DC43BC /* Reactnative.storyboard */; };
 		7436F31E1E19F6EF008E3DB7 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */; };
 		744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BA1E1A720100587862 /* LaunchScreen.storyboard */; };
 		744FE0BF1E1A720100587862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744FE0BC1E1A720100587862 /* Main.storyboard */; };
@@ -139,6 +140,7 @@
 		74254C051E3C930400DC43BC /* wkwww */ = {isa = PBXFileReference; lastKnownFileType = folder; path = wkwww; sourceTree = "<group>"; };
 		74254C071E3DD51700DC43BC /* H5Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = H5Window.swift; path = wk/H5Window.swift; sourceTree = "<group>"; };
 		74254C091E3ECDA800DC43BC /* Wkh5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Wkh5.storyboard; path = Stroybroad/Wkh5.storyboard; sourceTree = "<group>"; };
+		74254C0B1E3ED67D00DC43BC /* Reactnative.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Reactnative.storyboard; path = Stroybroad/Reactnative.storyboard; sourceTree = "<group>"; };
 		7436F31C1E19F6EF008E3DB7 /* TwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwoViewController.swift; path = Controller/TwoViewController.swift; sourceTree = "<group>"; };
 		744FE0BB1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		744FE0BD1E1A720100587862 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				744FE0BC1E1A720100587862 /* Main.storyboard */,
 				74A1FDE61E1A50890018801F /* Second.storyboard */,
 				74254C091E3ECDA800DC43BC /* Wkh5.storyboard */,
+				74254C0B1E3ED67D00DC43BC /* Reactnative.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				74A1FDE71E1A50890018801F /* Second.storyboard in Resources */,
 				741E42911E2BA780001739AA /* index2.html in Resources */,
 				744FE0BF1E1A720100587862 /* Main.storyboard in Resources */,
+				74254C0C1E3ED67D00DC43BC /* Reactnative.storyboard in Resources */,
 				7419D8041E11F16F002FB67E /* config.xml in Resources */,
 				744FE0BE1E1A720100587862 /* LaunchScreen.storyboard in Resources */,
 				74A1FDD91E1A4DED0018801F /* TwoViewController.xib in Resources */,
