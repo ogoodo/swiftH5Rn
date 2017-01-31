@@ -6,7 +6,50 @@ let wkwwwPlugins = "\(wkwwwRoot)/plugins"
 class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler {
     
     var wk: WKWebView!
+    // @IBOutlet weak var backBtn: UIBarButtonItem!
     
+    @IBAction func backToPre(_ sender: UIBarButtonItem) {
+        H5Window.popH5Static()
+        // self.navigationController?.popViewController(animated:true)
+    }
+
+    // 将在视图控制器中的视图
+    override func loadView() {
+        super.loadView()
+        self.setNav()
+        //此处我们可以设置视图，默认为UIView
+        print("WKWebViewController-------loadView")
+    }
+
+    private func setNav() {
+        // backBtn.title = "返回"
+        let item=UIBarButtonItem(title: "分享", style: UIBarButtonItemStyle.plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem=item
+        
+        //此处使用的图标UIBarButtonSystemItem是一个枚举.大家可以尝试一下其他值出来是什么
+        let item1=UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.cancel, target: self, action: #selector(self.backToPre))
+        self.navigationItem.leftBarButtonItem=item1
+        // 是否半透明
+        // self.navigationController?.navigationBar.isTranslucent = true
+        // 导航底色
+        // self.navigationController?.navigationBar.barTintColor = UIColor.cyan
+        // 如果我们设置了self.title这两者会相互覆盖，谁最后设置谁就现实出来
+        self.navigationItem.title="wk页面"
+        // 设置提示去只对当前ViewController有用，并且设置之后导航栏的高度会变成94像素
+        // self.navigationItem.prompt="提示区域"
+        //标题还可以设置为一个view
+        //设置一个搜索框
+        let searchBar=UISearchBar()
+        // let searchBar=UISearchBar(frame: CGRect(x: 0, y: 0, width: 0, height: 28) ) //四个角会出现杂色
+        // searchBar.barTintColor = UIColor.cyan
+        searchBar.isTranslucent = true
+        // self.navigationItem.titleView=searchBar
+        //设置一个分段选择器
+        let segController=UISegmentedControl(items: ["所有通话","未接电话"])
+        segController.selectedSegmentIndex=0
+        // self.navigationItem.titleView=segController
+    }
+    // 一般在视图加载完成后调用此方法
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -96,6 +139,12 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
 //        self.wk.removeObserver(self, forKeyPath: "loading")
 //        self.wk.removeObserver(self, forKeyPath: "estimatedProgress")
     }
+    // 视图已经出现的时候调用此方法
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("MyRootView-------viewDidAppear")
+    }
+    // 视图将要消失的时候调用此方法
     // 不知道是不是真的
     // 还有一点别忘了,对于KVO模式，有add一定要remove,否则会崩溃。我们可以在视图消失的时候添加remove:
     override func viewWillDisappear(_ animated: Bool) {
@@ -103,7 +152,12 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
         self.wk.removeObserver(self, forKeyPath: "loading")
         self.wk.removeObserver(self, forKeyPath: "estimatedProgress")
     }
-
+    // 视图已经消失的时候调用这个方法
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("MyRootView-------viewDidDisappear")
+    }
+    // 收到内存警告的时候调用此方法
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

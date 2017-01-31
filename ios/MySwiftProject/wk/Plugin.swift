@@ -38,7 +38,7 @@ class Plugin: NSObject {
         return self.callbackJs(error, values)
     }
     // 处理完成回调js
-    func callbackJs(_ error: Int, _ values: NSDictionary) -> Bool {
+    private func callbackJs(_ error: Int, _ values: NSDictionary) -> Bool {
         if self.callbackId == nil {
             NSLog("❌回调js函数callbackId不能为nil")
             return false

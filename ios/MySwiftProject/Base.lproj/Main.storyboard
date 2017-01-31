@@ -25,7 +25,7 @@
             </objects>
             <point key="canvasLocation" x="-1214" y="-188"/>
         </scene>
-        <!--View Controller-->
+        <!--主窗口-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MySwiftProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,9 +64,6 @@
                                 <rect key="frame" x="197" y="181" width="52" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="打开RN"/>
-                                <connections>
-                                    <segue destination="orc-sY-w6Y" kind="show" id="8R9-t2-9fk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOp-yC-oak">
                                 <rect key="frame" x="54" y="322" width="126" height="30"/>
@@ -119,7 +116,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qet-9W-ORQ"/>
+                    <navigationItem key="navigationItem" title="主窗口" id="Qet-9W-ORQ">
+                        <barButtonItem key="backBarButtonItem" title="backbutton" id="mgg-VB-plA"/>
+                        <barButtonItem key="rightBarButtonItem" title="add" id="Beg-h4-XvH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="myLabel" destination="CZI-EL-Qk9" id="9uq-qC-ogs"/>
                     </connections>
@@ -161,50 +161,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkn-Nv-guS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="36"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="o31-Nh-Ra2">
-            <objects>
-                <viewController storyboardIdentifier="RNViewController" id="orc-sY-w6Y" customClass="RNViewController" customModule="MySwiftProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="MQE-Ug-CfS"/>
-                        <viewControllerLayoutGuide type="bottom" id="jmS-K6-6Sv"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z0b-kB-w73">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSH-y7-XZq">
-                                <rect key="frame" x="16" y="102" width="66" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="返回"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="YOo-G6-lOo"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="react native window swift" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Qe-hF-soh">
-                                <rect key="frame" x="16" y="140" width="193" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXR-3J-hnl" customClass="ReactView" customModule="MySwiftProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="169" width="375" height="498"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.91431505534980928" green="0.99295834127788862" blue="1" alpha="0.77186949823943662" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EVN-7E-WHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="556" y="-655.32233883058473"/>
+            <point key="canvasLocation" x="751" y="-240"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YOo-G6-lOo"/>
+        <segue reference="Lxf-FT-gld"/>
     </inferredMetricsTieBreakers>
 </document>
