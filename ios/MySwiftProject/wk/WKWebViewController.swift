@@ -133,6 +133,8 @@ class WKWebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate,
     // 视图将要出现
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        // 切换tab时,更换nav
+        H5Window.setNav(self.navigationController)
         //监听状态, 不知道这个监听有没有问题
         self.wk.addObserver(self, forKeyPath: "loading", options: .new, context: nil)
         self.wk.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)

@@ -16,7 +16,48 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.initTab()
         return true
+    }
+    private func initTab() {
+        //创建ViewController
+        let homeVC=WKWebViewController()
+        let enjoyVC=WKWebViewController()
+        let exploreVC=WKWebViewController()
+        let userinfoVC=WKWebViewController()
+        
+        //设置ViewController在工具栏的图标
+        homeVC.tabBarItem.image=UIImage(named: "icon_tab01_normal.png")
+        enjoyVC.tabBarItem.image=UIImage(named: "icon_tab02_normal.png")
+        exploreVC.tabBarItem.image=UIImage(named: "icon_tab03_normal.png")
+        userinfoVC.tabBarItem.image=UIImage(named: "icon_tab04_normal.png")
+        homeVC.tabBarItem.selectedImage = UIImage(named: "icon_tab01_normal.png")
+        homeVC.tabBarItem.badgeValue="8"
+        
+        //设置ViewController在工具栏的名称
+        homeVC.tabBarItem.title="首页"
+        enjoyVC.tabBarItem.title="关注"
+        exploreVC.tabBarItem.title="探索"
+        userinfoVC.tabBarItem.title="我的"
+        
+        let nav = UINavigationController(rootViewController: homeVC)
+        nav.title = "nav"
+        
+        
+        //将以上的ViewController天剑到UITabBarController中
+        let tabBar=UITabBarController()
+        tabBar.viewControllers = [nav,enjoyVC,exploreVC,userinfoVC]
+        tabBar.selectedIndex=0
+//        let nav = UINavigationController(rootViewController: tabBar)
+//        nav.title = "nav"
+        // tabBar.delegate=self
+        //将window的跟视图设置为tabBar
+//        self.window?.rootViewController=tabBar
+//        self.window?.backgroundColor=UIColor.white
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tabBar
+        self.window?.backgroundColor = UIColor.red
+        self.window?.makeKeyAndVisible()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

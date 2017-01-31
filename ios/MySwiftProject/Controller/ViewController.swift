@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        H5Window.navigationController = self.navigationController;
+        H5Window.setNav(self.navigationController!);
         // self.navigationController?.setNavigationBarHidden(true, animated: true )
         // Do any additional setup after loading the view, typically from a nib.
     }

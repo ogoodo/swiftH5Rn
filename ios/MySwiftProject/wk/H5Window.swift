@@ -9,10 +9,19 @@
 import UIKit
 
 class H5Window: Plugin {
-    static var navigationController: UINavigationController?
+    private static var navigationController: UINavigationController?
     static var dicH5 = Dictionary<Int, UIViewController>()
     static var indexH5 = 0
     
+    static func setNav(_ navigationController: UINavigationController?) {
+        if navigationController == nil {
+            NSLog("没有navigation")
+            return
+        } else {
+            H5Window.navigationController = navigationController
+        }
+    }
+
     func pushH5() {
         let sb = UIStoryboard(storyboard: .WKH5)
         let vc: WKWebViewController = sb.instantiateViewController()
