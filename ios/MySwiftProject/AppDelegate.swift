@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
 
     var window: UIWindow?
 
@@ -27,30 +27,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let userinfoVC=WKWebViewController()
         
         //设置ViewController在工具栏的图标
-        homeVC.tabBarItem.image=UIImage(named: "icon_tab01_normal.png")
-        enjoyVC.tabBarItem.image=UIImage(named: "icon_tab02_normal.png")
-        exploreVC.tabBarItem.image=UIImage(named: "icon_tab03_normal.png")
-        userinfoVC.tabBarItem.image=UIImage(named: "icon_tab04_normal.png")
-        homeVC.tabBarItem.selectedImage = UIImage(named: "icon_tab01_normal.png")
+        // homeVC.tabBarItem.image=UIImageimageNamed("menu")
+        homeVC.tabBarItem.image=UIImage(named: "article.png")
+        enjoyVC.tabBarItem.image=UIImage(named: "profile.png")
+        exploreVC.tabBarItem.image=UIImage(named: "setting.png")
+        userinfoVC.tabBarItem.image=UIImage(named: "articleSelected.png")
+        homeVC.tabBarItem.selectedImage = UIImage(named: "articleSelected.png")
         homeVC.tabBarItem.badgeValue="8"
-        
+
         //设置ViewController在工具栏的名称
         homeVC.tabBarItem.title="首页"
         enjoyVC.tabBarItem.title="关注"
         exploreVC.tabBarItem.title="探索"
         userinfoVC.tabBarItem.title="我的"
-        
+
         let nav = UINavigationController(rootViewController: homeVC)
         nav.title = "nav"
-        
-        
+
         //将以上的ViewController天剑到UITabBarController中
-        let tabBar=UITabBarController()
+        let tabBar = UITabBarController()
         tabBar.viewControllers = [nav,enjoyVC,exploreVC,userinfoVC]
         tabBar.selectedIndex=0
 //        let nav = UINavigationController(rootViewController: tabBar)
 //        nav.title = "nav"
-        // tabBar.delegate=self
+        tabBar.delegate=self
         //将window的跟视图设置为tabBar
 //        self.window?.rootViewController=tabBar
 //        self.window?.backgroundColor=UIColor.white
@@ -81,7 +81,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+private typealias uiTabBarControllerDelegate = AppDelegate
+extension uiTabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController,
+                          shouldSelect viewController: UIViewController) -> Bool {
+    // func tabBarController(tabBarController: UITabBarController!, didSelectViewController viewController: UIViewController!) {
+        NSLog("用户选择了tab shouldSelect")
+        return true
+    }
+    func tabBarController(_ tabBarController: UITabBarController,
+                          didSelect viewController: UIViewController){
+        NSLog("用户选择了tab didSelect")
+    }
+}

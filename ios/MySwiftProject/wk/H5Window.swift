@@ -25,6 +25,8 @@ class H5Window: Plugin {
     func pushH5() {
         let sb = UIStoryboard(storyboard: .WKH5)
         let vc: WKWebViewController = sb.instantiateViewController()
+        // 隐藏下部的tab按钮
+        vc.hidesBottomBarWhenPushed = true
         H5Window.navigationController?.pushViewController(vc, animated: true)
         // H5Window.navigationController?.setNavigationBarHidden(true, animated: true)
         H5Window.indexH5 = H5Window.indexH5 + 1;
